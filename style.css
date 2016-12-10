@@ -1,0 +1,93 @@
+
+
+body{
+	font-family: helvetica;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.outer:not(:empty){
+    /* border: 1px solid lightgrey; */
+    box-shadow: 0 0 6px 1px grey;
+    min-width: 30%;
+    position: absolute;
+    right: 0.6em;
+    bottom: 1em;
+    padding: 1.2em;
+}
+
+
+.inner{
+	width: 96%;
+    margin: auto;
+}
+
+.inner > h1{
+	font-size: 1.4em;
+}
+
+.close{
+	position: absolute;
+	right: 0.5em;
+	top: 0.5em;
+	font-size: 1.4em;
+}
+
+.card{
+	background: grey;
+}
+
+.card img{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	white-space: nowrap;
+}
+
+.elem{
+	display: inline-block;
+	width: 45%;
+	background: lightgray;
+	border: 2px solid grey;
+}
+
+.elem .img{
+	width: 50%;
+	height: 100px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 50%;
+	background-color: #fff;
+	box-sizing: border-box;
+	border-bottom: 2px solid #000;
+}
+
+.elem p{
+	padding: 0.5em 1em;
+	font-weight: 600;
+}
+
+.elem:first-child{
+   float: left;
+}
+
+.elem:first-child .img:first-child{
+   border-right: 1px solid #000;
+}
+
+.elem:first-child .img:last-child{
+   border-left: 1px solid #000;
+}
+
+.elem:last-child{
+   float: right;
+}
+
+.elem:last-child .img:first-child{
+   border-right: 1px solid #000;
+}
+
+.elem:last-child .img:last-child{
+   border-left: 1px solid #000;
+}
